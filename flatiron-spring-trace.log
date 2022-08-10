@@ -1,0 +1,68 @@
+INF [THREAD:main]  example.logger2.SpringLogger2Application 
+		 Starting SpringLogger2Application using Java 18.0.1.1 on LAPTOP-8ER0HVAP with PID 11020 (C:\Users\seanj\Documents\GitHub\Flatiron_Bootcamp_Summer_2022\java-mod-7-spring-logger-lab-2\target\classes started by seanj in C:\Users\seanj\Documents\GitHub\Flatiron_Bootcamp_Summer_2022\java-mod-7-spring-logger-lab-2)
+INF [THREAD:main]  example.logger2.SpringLogger2Application 
+		 No active profile set, falling back to 1 default profile: "default"
+INF [THREAD:main]  boot.web.embedded.tomcat.TomcatWebServer 
+		 Tomcat initialized with port(s): 8080 (http)
+INF [THREAD:main]  org.apache.catalina.core.StandardService 
+		 Starting service [Tomcat]
+INF [THREAD:main]  org.apache.catalina.core.StandardEngine  
+		 Starting Servlet engine: [Apache Tomcat/9.0.65]
+INF [THREAD:main]  e.ContainerBase.[Tomcat].[localhost].[/] 
+		 Initializing Spring embedded WebApplicationContext
+INF [THREAD:main]  ntext.ServletWebServerApplicationContext 
+		 Root WebApplicationContext: initialization completed in 3628 ms
+INF [THREAD:main]  .security.web.DefaultSecurityFilterChain 
+		 Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71926a36, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@216e9ca3, org.springframework.security.web.context.SecurityContextPersistenceFilter@176f7f3b, org.springframework.security.web.header.HeaderWriterFilter@4cc36c19, org.springframework.security.web.csrf.CsrfFilter@56cfe111, org.springframework.security.web.authentication.logout.LogoutFilter@617389a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@58867cd5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@e4e1ef5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@75120e58, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@63d4f0a2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58740366, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b74b35, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48976e6d, org.springframework.security.web.session.SessionManagementFilter@2100d047, org.springframework.security.web.access.ExceptionTranslationFilter@94e51e8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a75ec37]
+INF [THREAD:main]  boot.web.embedded.tomcat.TomcatWebServer 
+		 Tomcat started on port(s): 8080 (http) with context path ''
+INF [THREAD:main]  example.logger2.SpringLogger2Application 
+		 Started SpringLogger2Application in 6.565 seconds (JVM running for 7.933)
+INF [THREAD:http-nio-8080-exec-1]  e.ContainerBase.[Tomcat].[localhost].[/] 
+		 Initializing Spring DispatcherServlet 'dispatcherServlet'
+INF [THREAD:http-nio-8080-exec-1]  gframework.web.servlet.DispatcherServlet 
+		 Initializing Servlet 'dispatcherServlet'
+INF [THREAD:http-nio-8080-exec-1]  gframework.web.servlet.DispatcherServlet 
+		 Completed initialization in 2 ms
+WAR [THREAD:http-nio-8080-exec-1]  che.catalina.util.SessionIdGeneratorBase 
+		 Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [247] milliseconds.
+TRA [THREAD:http-nio-8080-exec-3]  .example.logger2.crypto.CryptoController 
+		 Starting getCryptoName() method
+TRA [THREAD:http-nio-8080-exec-3]  .example.logger2.crypto.CryptoController 
+		 Starting getCryptoName() method
+TRA [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 TRACE: starting getCrpytoName() method
+TRA [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 TRACE: starting getCrpytoName() method
+INF [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 INFO: configuring crypto endpoint
+INF [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 INFO: configuring crypto endpoint
+INF [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 INFO: instantiating restTemplate
+INF [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 INFO: instantiating restTemplate
+INF [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 INFO: returning Data object
+INF [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 INFO: returning Data object
+INF [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 INFO: returning cryptoData object
+INF [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 INFO: returning cryptoData object
+INF [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 INFO: returning cryptoName object
+INF [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 INFO: returning cryptoName object
+INF [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 INFO: returning cryptoName
+INF [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 INFO: returning cryptoName
+TRA [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 TRACE: ending getCrpytoName() method
+TRA [THREAD:http-nio-8080-exec-3]  com.example.logger2.crypto.CryptoService 
+		 TRACE: ending getCrpytoName() method
+TRA [THREAD:http-nio-8080-exec-3]  .example.logger2.crypto.CryptoController 
+		 Ending getCryptoName() method
+TRA [THREAD:http-nio-8080-exec-3]  .example.logger2.crypto.CryptoController 
+		 Ending getCryptoName() method
