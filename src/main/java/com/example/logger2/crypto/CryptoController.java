@@ -3,7 +3,10 @@ package com.example.logger2.crypto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;
 
@@ -14,7 +17,6 @@ public class CryptoController {
     // We create a private instance variable jokeService to get access to the service's methods
     @Autowired
     private final CryptoService cryptoService;
-
     Logger logger = LoggerFactory.getLogger(CryptoController.class);
 
     // Since our BitcoinService class has the @Service annotation,

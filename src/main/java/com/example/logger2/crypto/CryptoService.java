@@ -11,6 +11,7 @@ import java.math.BigDecimal;
 public class CryptoService {
 
     Logger logger = LoggerFactory.getLogger(CryptoService.class);
+
     public BigDecimal getCryptoPrice(String name) {
         try {
             logger.trace("TRACE: starting getCryptoPrice() method");
@@ -26,7 +27,7 @@ public class CryptoService {
             logger.info("INFO: creating Data object");
             Data data = restTemplate.getForObject(apiURL, Data.class);
             logger.info("INFO: creating cryptoData object");
-            cryptoData cryptoData = data.getData();
+            CryptoData cryptoData = data.getData();
             logger.info("INFO: getting cryptoPrice");
             BigDecimal cryptoPrice = cryptoData.getPriceUsd();
             logger.info("INFO: returning cryptoPrice");
@@ -42,7 +43,7 @@ public class CryptoService {
         try {
             logger.trace("TRACE: starting getCrpytoName() method");
             logger.info("INFO: configuring crypto endpoint");
-            String apiURL = "https://api.coincap.io/v2/assets/" + name;;
+            String apiURL = "https://api.coincap.io/v2/assets/" + name;
             // We use the RestTemplate class to make a request to the URL for the Joke API
             logger.info("INFO: instantiating restTemplate");
             RestTemplate restTemplate = new RestTemplate();
@@ -53,7 +54,7 @@ public class CryptoService {
             logger.info("INFO: returning Data object");
             Data data = restTemplate.getForObject(apiURL, Data.class);
             logger.info("INFO: returning cryptoData object");
-            cryptoData cryptoData = data.getData();
+            CryptoData cryptoData = data.getData();
             logger.info("INFO: returning cryptoName object");
             String cryptoName = cryptoData.getId();
             logger.info("INFO: returning cryptoName");
@@ -67,7 +68,7 @@ public class CryptoService {
 
 }
 
-class cryptoData {
+class CryptoData {
     public String id;
     public BigDecimal priceUsd;
 
@@ -89,11 +90,13 @@ class cryptoData {
 }
 
 class Data {
-    private cryptoData data;
-    public cryptoData getData() {
+    private CryptoData data;
+
+    public CryptoData getData() {
         return data;
     }
-    public void setData(cryptoData data) {
+
+    public void setData(CryptoData data) {
         this.data = data;
     }
 }

@@ -23,7 +23,6 @@ public class CryptoControllerIntegrationTest {
 
     @Autowired
     private MockMvc mockMvc;
-
     @MockBean
     private CryptoService cryptoService;
 
@@ -32,7 +31,6 @@ public class CryptoControllerIntegrationTest {
     void getPrice() throws Exception {
         BigDecimal value = BigDecimal.valueOf(23218.3479504872028595);
         String cryptoName = "bitcoin";
-
         Mockito.when(cryptoService.getCryptoPrice(cryptoName)).thenReturn(value);
         // perform() method lets us pass in a http verb, along with the appropriate parameters for that call.
         // In this case, we are asking for a GET request to be executed and pass in the URL to which it should be submitted.
@@ -49,7 +47,6 @@ public class CryptoControllerIntegrationTest {
     @Test
     void getId() throws Exception {
         String cryptoName = "bitcoin";
-
         Mockito.when(cryptoService.getCryptoName(cryptoName)).thenReturn(cryptoName);
         // perform() method lets us pass in a http verb, along with the appropriate parameters for that call.
         // In this case, we are asking for a GET request to be executed and pass in the URL to which it should be submitted.
